@@ -1,2 +1,2 @@
 # BonfireScratch.github.io
-My WIP website
+My WIP website, on its alpha version!
