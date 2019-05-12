@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home - Bonfire</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-dark">
+<nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+<ul class="navbar-nav ml-auto nav-fill">
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Tutorials</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Projects</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="">More...</a>
+</li>
+</ul>
+</nav>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+$(document).ready(function() {
+	getScroll();
+});
+
+$(window).scroll(function() {
+	getScroll();
+});
+
+function getScroll() {
+	var scroll  = $(window).scrollTop();
+	if (scroll <= 50) {
+		$("#navbar").removeClass("bg-white");
+		$("#navbar").addClass("bg-transparent");
+	} else {
+		$("#navbar").removeClass("bg-transparent");
+		$("#navbar").addClass("bg-white");
+	}
+}
+</script>
+</body>
+</html>
