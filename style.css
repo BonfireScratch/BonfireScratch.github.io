@@ -1,4 +1,28 @@
 .navbar-nav > li {
-  padding-left:30px;
-  padding-right:30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.part-img {
+	position: absolute;
+	clip: rect(0, 10000px, 200px, 0);
+}
+
+.img-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+}
+
+#image {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.code-img {
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
 }
