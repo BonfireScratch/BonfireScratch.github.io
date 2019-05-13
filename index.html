@@ -33,25 +33,6 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<script>
-$(document).ready(function() {
-	getScroll();
-});
-
-$(window).scroll(function() {
-	getScroll();
-});
-
-function getScroll() {
-	var scroll  = $(window).scrollTop();
-	if (scroll <= 50) {
-		$("#navbar").removeClass("bg-white");
-		$("#navbar").addClass("bg-transparent");
-	} else {
-		$("#navbar").removeClass("bg-transparent");
-		$("#navbar").addClass("bg-white");
-	}
-}
-</script>
+<script src="index.js"></script>
 </body>
 </html>
