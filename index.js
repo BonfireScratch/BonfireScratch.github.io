@@ -17,10 +17,14 @@ function navbarTransition(mode) {
 	
 	if (scroll <= 50) {
 		$("#navbar").removeClass("bg-white");
+		$("#navbar").removeClass("navbar-light");
 		$("#navbar").addClass("bg-transparent");
+		$("#navbar").addClass("navbar-dark");
 	} else {
 		$("#navbar").removeClass("bg-transparent");
+		$("#navbar").removeClass("navbar-dark");
 		$("#navbar").addClass("bg-white");
+		$("#navbar").addClass("navbar-light");
 	}
 	
 	if (mode == 'scroll') {
