@@ -2,6 +2,17 @@ var transition = false;
 
 $(document).ready(function() {
 	navbarTransition('start');
+	$("footer a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 900, function(){
+				window.location.hash = hash;
+			});
+		}
+	});
 });
 
 $(window).scroll(function() {
@@ -20,11 +31,13 @@ function navbarTransition(mode) {
 		$("#navbar").removeClass("navbar-light");
 		$("#navbar").addClass("bg-transparent");
 		$("#navbar").addClass("navbar-dark");
+		$("#navbar").css("border-bottom", "");
 	} else {
 		$("#navbar").removeClass("bg-transparent");
 		$("#navbar").removeClass("navbar-dark");
 		$("#navbar").addClass("bg-white");
 		$("#navbar").addClass("navbar-light");
+		$("#navbar").css("border-bottom", "2px solid lightGray");
 	}
 	
 	if (mode == 'scroll') {
