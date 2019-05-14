@@ -5,12 +5,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="myPage">
 <nav class="navbar navbar-expand-md fixed-top" id="navbar">
 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
@@ -30,7 +31,7 @@
 <a class="navbar-brand" href="">PROJECTS</a>
 </li>
 <li class="nav-item dropdown">
-<a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">MORE </a>
+<a class="navbar-brand " data-toggle="dropdown" href="">MORE <i class='fas fa-angle-down'></i></a>
 <div class="dropdown-menu">
 <a class="dropdown-item" href="">Stuff...</a>
 </div>
@@ -42,6 +43,26 @@
 <img class="img-fluid w-100 code-img" src="code-img.jpg">
 <div class="img-text">Hey! I'm a young, self-taught coder, and this is my website!</div>
 </div>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<center>
+<img src="microsoft.png">
+</center>
+</div>
+<div class="col-sm-6">
+<h2>About me</h2>
+<br>
+<p>I'm a young, self-taught programmer, mainly using Python and JavaScript as of 2019. On this website, I will publish Python and C tutorials, share my opinions about programming languages, and I might even make devlogs! I would like to learn Rust and Go, and my dream is to become a Maths professor. I love Microsoft's products a lot!</p>
+<button type="button" class="btn btn-outline-dark btn-lg">LEARN MORE</button>
+</div>
+</div>
+</div>
+<br><br><br>
+<footer class="container-fluid text-center">
+<a href="#myPage" title="To Top"><i class='fas fa-angle-up'></i></a>
+</footer>
 <script src="index.js"></script>
 </body>
 </html>
