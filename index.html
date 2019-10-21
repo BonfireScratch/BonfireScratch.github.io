@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-<link rel="stylesheet" href="style.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+<link rel="stylesheet" href="./style/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -22,7 +22,7 @@
 <a class="navbar-brand" href="">HOME</a>
 </li>
 <li class="nav-item">
-<a class="navbar-brand" href="">ABOUT</a>
+<a class="navbar-brand" href="about.html">ABOUT</a>
 </li>
 <li class="nav-item">
 <a class="navbar-brand" href="">TUTORIALS</a>
@@ -40,12 +40,13 @@
 </div>
 </nav>
 <div id="image">
-<img class="img-fluid w-100 code-img" src="code-img.jpg">
-<div class="img-text">Hey! I'm a self-proclaimed Python coder, and this is my new website!</div>
+<img class="img-fluid w-100 code-img" src="code-img.jpg"></img>
+<img class="img-logo rounded-circle" src="logo.png"></img>
+<div class="img-text">Hey! I'm a self-proclaimed programmer, and this is my new website!</div>
 </div>
 <br>
 <div class="container">
-<div class="row">
+<div class="row slideanim">
 <div class="col-sm-6">
 <center>
 <img src="microsoft.png">
@@ -54,15 +55,16 @@
 <div class="col-sm-6">
 <h2>About me</h2>
 <br>
-<p>I'm a self-taught programmer, mainly using Python and JavaScript. On this website, I will publish Python and C tutorials, share my opinions about programming languages, and I might even make devlogs! I would like to learn Rust, Go and Ruby, and my dream is to become a Maths professor at a university. I'm interested in topics like algorithms, machine learning, and game development. I can design <b>simple</b> graphics, and I want to learn to compose music. I like Microsoft's products a lot, especially Visual Studio Code and Office!</p>
-<button type="button" class="btn btn-outline-dark btn-lg">LEARN MORE</button>
+<p>Hey! I am an adolescent interested in weird topics like maths, physics, geography, international politics, and economics. But, apart from that, I am also a freelance programmer, mainly coding in JavaScript, Python, and C++.</p>
+<a href="./about.html"><button type="button" class="btn btn-outline-dark btn-lg">LEARN MORE</button></a>
 </div>
 </div>
-<br><br>
+<br><br><br>
+<div class="slideanim">
 <center>
 <h2>What I'm working on</h2>
 <br>
-<p>Right now I'm creating a programming language called N#. I'm also creating a bot for the Scratch website, as well as a statistics website for it. Meanwihle, I am learning C, Python GUI design, and game development with Unity and C#. And, of course, I'm currently designing this (far from complete) website! If you have any suggestions, open an issue <a href="https://github.com/BonfireScratch/BonfireScratch.github.io/issues/new?assignees=&labels=&template=feature_request.md&title=" target="_blank">here</a></p>
+<p>Right now, my main priority is creating an online code editor, <a href="https://padscape.github.io/padscape/">Padscape</a>. In addition, I'm creating a programming language called N# using C++, and I am also trying to make 3D games with Unity and Java. And, of course, I'm currently designing this (far from complete) website! If you have any suggestions about it, you can open an issue <a href="https://github.com/BonfireScratch/BonfireScratch.github.io/issues/new?assignees=&labels=&template=feature_request.md&title=" target="_blank">here</a></p>
 <button type="button" class="btn btn-outline-dark btn-lg">VIEW MY WORK</button>
 </center>
 </div>
@@ -74,6 +76,6 @@
 <br><br>
 <center><h6><small>This website was brought to you by 100% recycled electrons</small></h6></center>
 <br>
-<script src="index.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
