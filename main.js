@@ -46,6 +46,12 @@ $(".dropdown-toggle").on("mouseenter", function() {
     }
 });
 
+$('.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+}, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
 $(".navbar-toggler").on('click', () => {
     if ($(".navbar-collapse").hasClass("show")) {
         setTimeout(() => {
