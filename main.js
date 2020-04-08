@@ -1,27 +1,28 @@
-var transition = false;
+let transition = false;
 
-$(document).ready(function() {
+$(document).ready(() => {
 	navbarTransition('start');
 	$("footer a").on('click', function(event) {
 		if (this.hash !== "") {
 			event.preventDefault();
-			var hash = this.hash;
+            let hash = this.hash;
+
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 900, function(){
+			}, 900, () => {
 				window.location.hash = hash;
 			});
 		}
 	});
 });
 
-$(window).scroll(function() {
+$(window).scroll(() => {
 	navbarTransition('scroll');
 	slideAnimation();
 });
 
-function navbarTransition(mode) {
-	var scroll  = $(window).scrollTop();
+navbarTransition = mode => {
+	let scroll  = $(window).scrollTop();
 	
 	if (transition) {
 		$("#navbar").css('transition', 'all 1s');
@@ -46,18 +47,18 @@ function navbarTransition(mode) {
 	}
 }
 
-function slideAnimation() {
-	$(".slideanim").each(function(){
-		var pos = $(this).offset().top;
+slideAnimation = () => {
+	$(".slideanim").each(function() {
+		let pos = $(this).offset().top;
+        let winTop = $(window).scrollTop();
 
-		var winTop = $(window).scrollTop();
-		if (pos < winTop + 600) {
+		if (pos < winTop + 800) {
 			$(this).addClass("slide");
 		}
 	});
 }
 
-$(".dropdown-toggle").on("mouseenter", function () {
+$(".dropdown-toggle").on("mouseenter", function() {
     if (!$(this).parent().hasClass("show")) {
         $(this).click();
     }
