@@ -2,11 +2,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-y: scroll;
     line-height: 1.6;
     font-family: 'Raleway', sans-serif;
     -ms-overflow-style: none;
+    font-size: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -17,9 +22,8 @@ h2 {
     font-size: 4rem;
 }
 
-p {
+p, li {
     color: #646464;
-    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -66,20 +70,36 @@ html, body, .gradient {
     height: 50%;
 }
 
+.down-btn {
+    opacity: 0;
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 1.75s ease 0.5s 1 forwards;
+    -webkit-animation: fadeIn 1.75s ease 0.5s 1 forwards;
+}
+
 .img-text {
+    opacity: 0;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+    animation: fadeIn 1.25s ease 0.5s 1 forwards;
+    -webkit-animation: fadeIn 1.25s ease 0.5s 1 forwards;
 }
 
 .img-logo {
+    opacity: 0;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: fadeIn 0.75s ease 0.5s 1 forwards;
+    -webkit-animation: fadeIn 0.75s ease 0.5s 1 forwards;
 }
 
 .slideanim {
@@ -143,6 +163,24 @@ html, body, .gradient {
     width: 100%;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -153,6 +191,7 @@ html, body, .gradient {
         transform: translateY(0%);
     }
 }
+
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
