@@ -102,6 +102,10 @@ html, body, .gradient {
     -webkit-animation: fadeIn 0.75s ease 0.5s 1 forwards;
 }
 
+.card-img-top {
+    width: 100%;
+}
+
 .slideanim {
     visibility: hidden;
 }
