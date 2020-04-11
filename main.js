@@ -68,4 +68,8 @@ $(window).scroll(() => {
 
 $(document).ready(() => {
     navbarTransition();
+
+    $('.nav-item').each((index, element) => {
+        $(element).css({'animation': `slide 1s ease ${index / 3}s 1 forwards`, '-webkit-animation': `slide 1s ease ${index / 3}s 1 forwards`});
+    });
 });
