@@ -56,10 +56,13 @@ p, li {
     opacity: 0;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.navbar-brand {
     transition: all 0.2s ease-in-out;
 }
 
-.navbar-nav > li:hover {
+.navbar-brand:hover {
     transform: translateY(-5px);
 }
 
