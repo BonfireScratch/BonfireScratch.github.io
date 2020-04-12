@@ -110,8 +110,8 @@ html, body, .gradient {
     opacity: 0;
     position: absolute;
     top: 30%;
-    left: calc(50% - 45px);
-    transform: translateX(calc(50% -45px));
+    left: calc(50% - 75px);
+    transform: translateX(calc(50% -75px));
     animation: slide 1s ease 0.5s 1 forwards;
     -webkit-animation: slide 1s ease 0.5s 1 forwards;
 }
